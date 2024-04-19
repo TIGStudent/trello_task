@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="flex-container text20px">
+        <div>
+            <div class="card_list_active">
+                <pre>{{card_list}}</pre>
+            </div>
+            <div class="card_list_done">
+                <pre>{{card_list_done}}</pre>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        setInterval(function () {
+            window.location.reload(true);
+        }, 20000); // 20000 milliseconds = 20 seconds
+    </script>
+
+</body>
+
+</html>
