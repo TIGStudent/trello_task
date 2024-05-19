@@ -21,4 +21,4 @@ def newivy():
     return render_template('index.html', card_list=card_list_active, card_list_done=card_list_done)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0',port=5000, debug=True)
