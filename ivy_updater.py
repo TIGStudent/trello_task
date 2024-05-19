@@ -48,10 +48,10 @@ def renew_cards() -> None:
                             
                 if date_to_update >= dagar:
                     trello_api.move_trello_card(card_id=card_id, new_list_id=trello_api.list_id_aktive)
-                    print("   card moved")
+                    print("card moved")
                     break
                 else:
-                    print("   card not moved, too early")
+                    print("card not moved, too early")
                     break
 
 if __name__ == "__main__":
